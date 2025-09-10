@@ -1,0 +1,50 @@
+[
+    {
+        "name": "TMDB VidPlus Provider",
+        "description": "Watch movies and TV series using TMDB data with VidPlus player",
+        "version": 1,
+        "authors": ["Assistant"],
+        "repositoryUrl": "https://github.com/daffazzz/cloudstream",
+        "url": "https://raw.githubusercontent.com/daffazzz/cloudstream/builds/TMDBVidPlusProvider.cs3",
+        "tvTypes": ["Movie", "TvSeries"],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=player.vidplus.to&sz=64",
+        "status": 3,
+        "language": "en"
+    },
+    {
+        "name": "Dailymotion",
+        "description": "Watch content from Dailymotion",
+        "version": 3,
+        "authors": ["Luna712"],
+        "repositoryUrl": "https://github.com/daffazzz/cloudstream",
+        "url": "https://raw.githubusercontent.com/daffazzz/cloudstream/builds/DailymotionProvider.cs3",
+        "tvTypes": ["Others"],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=64",
+        "status": 1,
+        "language": "en"
+    },
+    {
+        "name": "Invidious",
+        "description": "Watch YouTube videos through Invidious instances",
+        "version": 1,
+        "authors": ["Assistant"],
+        "repositoryUrl": "https://github.com/daffazzz/cloudstream",
+        "url": "https://raw.githubusercontent.com/daffazzz/cloudstream/builds/InvidiousProvider.cs3",
+        "tvTypes": ["Others"],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=iv.ggtyler.dev&sz=64",
+        "status": 1,
+        "language": "en"
+    },
+    {
+        "name": "Twitch",
+        "description": "Watch Twitch live streams",
+        "version": 1,
+        "authors": ["Assistant"],
+        "repositoryUrl": "https://github.com/daffazzz/cloudstream",
+        "url": "https://raw.githubusercontent.com/daffazzz/cloudstream/builds/TwitchProvider.cs3",
+        "tvTypes": ["Live"],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=twitch.tv&sz=64",
+        "status": 1,
+        "language": "uni"
+    }
+]
