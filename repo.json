@@ -1,0 +1,8 @@
+{
+    "name": "TMDB VidPlus Cloudstream Provider",
+    "description": "Cloudstream extension with TMDB data and VidPlus player support",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/daffazzz/cloudstream/builds/plugins.json"
+    ]
+}
