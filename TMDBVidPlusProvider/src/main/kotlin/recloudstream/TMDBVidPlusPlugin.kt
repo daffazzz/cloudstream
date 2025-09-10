@@ -7,7 +7,7 @@ import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 class TMDBVidPlusPlugin: BasePlugin() {
     override fun load() {
         // All providers should be added in this manner. Please don't edit the providers list directly.
-        registerMainAPI(TMDBVidPlusProvider())
-        registerExtractorAPI(VidPlusExtractor())
+        registerMainAPI(TMDBVidPlusProviderSimple())
+        // registerExtractorAPI(VidPlusExtractor())
     }
 }

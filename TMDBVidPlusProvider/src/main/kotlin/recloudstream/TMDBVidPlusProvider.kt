@@ -11,7 +11,6 @@ import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.MainPageRequest
 import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.TvSeriesLoadResponse
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.app
 import com.lagradost.cloudstream3.mainPageOf
@@ -124,7 +123,12 @@ class TMDBVidPlusProvider : MainAPI() {
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val response = app.get("$tmdbBaseUrl/movie/${request.data}?api_key=$tmdbApiKey&page=$page").text
+        val url = if (request.data.startsWith("tv/")) {
+            "$tmdbBaseUrl/${request.data}?api_key=$tmdbApiKey&page=$page"
+        } else {
+            "$tmdbBaseUrl/movie/${request.data}?api_key=$tmdbApiKey&page=$page"
+        }
+        val response = app.get(url).text
         val searchResponse = tryParseJson<TMDBSearchResponse>(response)
         
         val items = searchResponse?.results?.map { item ->
