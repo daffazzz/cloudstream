@@ -1,0 +1,4 @@
+[33m45d0530[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m tes
+[33m0498dd3[m Fix TMDBVidPlusProvider: simplify for debugging and fix build issues
+[33mf091c90[m Add plugins.json for builds directory
+[33m61b3e78[m Initial commit: Add TMDB VidPlus Provider with existing extensions
